@@ -1,0 +1,25 @@
+{
+    "name": "range-select",
+    "description": "Range select a group of items.",
+    "version": "0.0.1",
+    "keywords": [
+        "range",
+        "select",
+        "js",
+        "jquery"
+    ],
+    "homepage": "https://adrianmejias.com/range-select",
+    "main": [
+        "range-select.js",
+        "range-select.min.js"
+    ],
+    "ignore": [
+        "index.html",
+        "range-select.css",
+        "composer.json",
+        "README.md"
+    ],
+    "dependencies": {
+        "jquery": ">= 1.11.0"
+    }
+}

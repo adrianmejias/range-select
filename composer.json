@@ -1,0 +1,33 @@
+{
+	"name": "adrianmejias/range-select",
+	"description": "Range select a group of items.",
+	"version": "0.0.1",
+	"keywords": [
+		"range",
+		"select",
+		"js",
+		"jquery"
+	],
+	"homepage": "https://adrianmejias.com/range-select",
+	"authors": [
+		{
+			"name": "Adrian Mejias",
+			"email": "adrianmejias@gmail.com"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/adrianmejias/range-select/issues"
+	},
+	"license": "Public Domain",
+	"extra": {
+		"branch-alias": {
+			"dev-master": "0.0.x-dev"
+		}
+	},
+	"replace": {
+		"adrianmejias/range-select": "self.version"
+	},
+	"require": {
+		"jquery/jquery": "1.11.*"
+	}
+}

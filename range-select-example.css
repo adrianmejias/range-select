@@ -1,0 +1,36 @@
+body {
+	font-size: 12pt;
+	font-family: arial, helvetica, sans-serif;
+}
+[data-toggle=range] {
+	clear: left;
+	overflow: hidden;
+}
+[data-toggle=range] input[type=checkbox] {
+	display: none;
+}
+[data-toggle=range] .range-item {
+	float: left;
+	margin: 2px;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	font-weight: bold;
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	cursor: pointer;
+	text-align: center;
+}
+[data-toggle=range] .range-item:hover {
+	opacity: .4;
+}
+[data-toggle=range] .range-item.active {
+	color: #fff;
+	background-color: #ff0000;
+}
+[data-toggle=range] .range-item.highlight {
+	color: #333;
+	background-color: #ccc;
+}

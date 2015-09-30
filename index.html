@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Range Select</title>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="range-select-example.css" rel="stylesheet">
+		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="range-select.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<h1>Range Select</h1>
+					<p class="lead">
+						Select from the options below
+					</p>
+					<form role="form">
+						<div class="form-group">
+							<ul data-toggle="range-select" class="list-unstyled">
+								<li class="range-item">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" id="item-1">
+											1
+										</label>
+									</div>
+								</li>
+								<li class="range-item">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" id="item-2">
+											2
+										</label>
+									</div>
+								</li>
+								<li class="range-item">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" id="item-3">
+											3
+										</label>
+									</div>
+								</li>
+								<li class="range-item">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" id="item-4">
+											4
+										</label>
+									</div>
+								</li>
+								<li class="range-item">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" id="item-5">
+											5
+										</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script>
+		$(function() {
+			$('[data-toggle=range-select]').rangeSelect({
+				selector: '.range-item',
+		        toggle: function(el) {
+		            $(el).find('input[type=checkbox]').prop('checked', !$(this).find('input[type=checkbox]').is(':checked'));
+		        },
+		        activate: function(el) {
+		            $(el).find('input[type=checkbox]').prop('checked', true);
+		        }
+		    });
+		});
+		</script>
+	</body>
+</html>
